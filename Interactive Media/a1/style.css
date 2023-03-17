@@ -11,6 +11,10 @@ body {
     justify-content: center;
 }
 
+img {
+    width: 100000%;
+}
+
 #week-2-questions {
     padding: 5%;
     margin-left: 10%;
