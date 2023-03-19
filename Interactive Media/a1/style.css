@@ -1,5 +1,6 @@
 body {
-    background-color: #AD8B73;
+    background-color: #84b44c;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 #title-section {
@@ -13,6 +14,10 @@ body {
 
 img {
     width: 80%;
+    border: solid;
+    border-color: #258c24;
+    border-width: 5px;
+    border-radius: 2%;
 }
 
 .research-questions {
@@ -27,13 +32,30 @@ img {
     border-style: solid;
     border-width: 5px;
     border-radius: 2%;
-    border-color: #CEAB93;
-    background-color: #E3CAA5;
+    border-color: #258c24;
+    background-color: #ece48c;
 }
 
 hr {
-    border-top: 8px solid #bbb;
+    color: #258c24;
+    border-top: 8px solid ;
     border-radius: 5px;
     margin-left: 6%;
     margin-right: 6%;
+}
+
+#button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 15px;
+    margin: 1%;
+    padding: 1px 24px;
+    border-color: #258c24;
+    border-width: 2px;
+    border-radius: 10%;
+    background-color: #ece48c;
 }
