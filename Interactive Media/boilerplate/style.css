@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --col01: rgb(26, 25, 25);
+    --col02: rgb(60, 58, 58);
+    --col03: rgb(150, 144, 144);
+    --col04: rgb(249, 248, 248);
+    --border: groove 10px var(--col02)
+}
