@@ -2,8 +2,9 @@
     --border: solid;
     --border-radius: 2%;
     --border-width: 3px;
+    --greycolour: #666666;
 
-    --speech-colour: #646464;
+    --speech-colour: #090909;
     --speech-radius: 1000px;
 }
 
@@ -32,6 +33,7 @@
     flex-direction: row-reverse;
     margin-right: 1%;
     width: 30%;
+    background-color: var(--greycolour);
 
     border-style: var(--border);
     border-radius: var(--border-radius);
@@ -158,6 +160,7 @@
 
 #row2_3 {
     width: 20%;
+    background-color: var(--greycolour);
 
     border-style: var(--border);
     border-radius: var(--corner);
@@ -180,6 +183,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 30%;
+    background: linear-gradient(90deg, var(--greycolour) 50%, white 50%);
 
     border-style: var(--border);
     border-radius: var(--border-radius);
