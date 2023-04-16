@@ -23,6 +23,8 @@
 
     <div class="FilterSection">     
 
+        <button class="allButton" onclick='filterCategory("RecipeBox", this)'>All Recipes</button>
+
       <details class="FilterBox">
         <summary>Author</summary>
         <button class="FilterButton" onclick='filterCategory("KLA", this)'>J. Kenji López-Alt</button>
@@ -70,7 +72,7 @@
       </div>
 
       <div class="bodyBox">
-          <div class="leftBox">
+          <div class="leftBox" id="imageBox">
             <div class="RecipeImageContainer">
 
               <img class="RecipeImg" src="./images/Puttanesca.jpg" alt="bowl of puttanesca pasta"/>
@@ -88,17 +90,17 @@
             </div>
           </div>
 
-          <div class="rightBox">
-            <div class="Publisher">Publisher: ABC Everyday</div>
-            <div class="Cuisine">Cuisine: Italian</div>
-            <div class="TimeToCook">Time to Cook: 0:10 prep time - 0:30 cook time</div>
-            <div class="SkillLevel">Skill Level: Low</div>
-            <div class="Course">Course: Main</div>
-            <div class="Servings">Servings: 4 to 6</div>
-            <div class="Dietary">Dietary: Vegetarian</div>
-            <div class="DatePublished">Date Published: 3 Jul 2019</div>
-            <div class="DateUpdated">Date Updated: 29 Jul 2019</div>
-            <div class="SpecialEquipment">Special Equipment: Ovenproof Dutch oven</div>
+          <div class="rightBox" id="infoBox">
+            <div class="Publisher"><b>Publisher:</b> ABC Everyday</div><br>
+            <div class="Cuisine"><b>Cuisine:</b> Italian</div><br>
+            <div class="TimeToCook"><b>Time to Cook:</b> 0:10 prep time - 0:30 cook time</div><br>
+            <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+            <div class="Course"><b>Course:</b> Main</div><br>
+            <div class="Servings"><b>Servings:</b> 4 to 6</div><br>
+            <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+            <div class="DatePublished"><b>Date Published:</b> 3 Jul 2019</div><br>
+            <div class="DateUpdated"><b>Date Updated:</b> 29 Jul 2019</div><br>
+            <div class="SpecialEquipment"><b>Special Equipment:</b> Ovenproof Dutch oven</div><br>
           </div>
       </div>
 
@@ -113,20 +115,20 @@
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
-          <div class="Publisher">Publisher: ABC Everyday</div>
-          <div class="Cuisine">Cuisine: Italian</div>
-          <div class="TimeToCook">Time to Cook: 75-105 mins</div>
-          <div class="SkillLevel">Skill Level: Low</div>
-          <div class="Course">Course: Salad</div>
-          <div class="Servings">Servings: ?</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: 4 Feb 2019</div>
-          <div class="DateUpdated">Date Updated: 17 Dec 2020</div>
-          <div class="SpecialEquipment">Special Equipment: N/A</div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> ABC Everyday</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Italian</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 75-105 mins</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+          <div class="Course"><b>Course:</b> Salad</div><br>
+          <div class="Servings"><b>Servings:</b> 2 to 4</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> 4 Feb 2019</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> 17 Dec 2020</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A</div><br>
         </div>
 
-        <div class="rightBox">
+        <div class="rightBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Caprese.jpg" alt="plate of caprese salad" />
@@ -156,7 +158,7 @@
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
+        <div class="leftBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Enoki.jpg" alt="enoki mushrooms" />
@@ -174,17 +176,17 @@
           </div>
         </div>
 
-        <div class="rightBox">
-          <div class="Publisher">Publisher: Serious Eats</div>
-          <div class="Cuisine">Cuisine: Fusion</div>
-          <div class="TimeToCook">Time to Cook: 30 mins</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Snack, Savoury</div>
-          <div class="Servings">Servings: 4 to 6</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: Oct. 9, 2012</div>
-          <div class="DateUpdated">Date Updated: Aug. 30, 2018</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="rightBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Serious Eats</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Fusion</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 30 mins</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Snack, Savoury</div><br>
+          <div class="Servings"><b>Servings:</b> 4 to 6</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Oct. 9, 2012</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> Aug. 30, 2018</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
       </div>
 
@@ -194,25 +196,25 @@
     <div class="RecipeBox M Korean Vegetarian Medium">
 
       <div class="headingBox">
-        <h2><a href="https://www.maangchi.com/recipe/jjinppang" target="_blank" rel="noopener noreferrer"></a>Fluffy Steamed Buns filled with Sweet Red Beans</h2>
+        <h2><a href="https://www.maangchi.com/recipe/jjinppang" target="_blank" rel="noopener noreferrer">Fluffy Steamed Buns filled with Sweet Red Beans</a></h2>
         <p>Maangchi</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
-          <div class="Publisher">Publisher: Maangchi</div>
-          <div class="Cuisine">Cuisine: Korean</div>
-          <div class="TimeToCook">Time to Cook: ~ 11 hours preperation. 15 mins to cook</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Snack, Sweet</div>
-          <div class="Servings">Servings: 10 pieces</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: December 19, 2017</div>
-          <div class="DateUpdated">Date Updated: August 11, 2021</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Maangchi</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Korean</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> ~ 11 hours preperation. 15 mins to cook</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Snack, Sweet</div><br>
+          <div class="Servings"><b>Servings:</b> 10 pieces</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> December 19, 2017</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> August 11, 2021</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
   
-        <div class="rightBox">
+        <div class="rightBox" id="imageBox">
           <div class="RecipeImageContainer">
   
             <img class="RecipeImg" src="./images/Red_Bean_Bun.jpg" alt="ripped open steamed bun with red bean paste" />
@@ -236,12 +238,12 @@
     <div class="RecipeBox KLA Western Vegetarian Low">
 
       <div class="headingBox">
-        <h2><a href="https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe" target="_blank" rel="noopener noreferrer"></a>The Food Lab's Chocolate Chip Cookies</h2>
+        <h2><a href="https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe" target="_blank" rel="noopener noreferrer">The Food Lab's Chocolate Chip Cookies</a></h2>
         <p>J. Kenji López-Alt</p>
       </div>
 
       <div class="bodyBox"> 
-        <div class="leftBox">
+        <div class="leftBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Cookies.jpg" alt="plate of chocolate chip cookies" />
@@ -258,17 +260,17 @@
           </div>
         </div>
 
-        <div class="rightBox">
-          <div class="Publisher">Publisher: Serious Eats</div>
-          <div class="Cuisine">Cuisine: Western</div>
-          <div class="TimeToCook">Time to Cook: 45mins prep. 35mins to cook</div>
-          <div class="SkillLevel">Skill Level: Low</div>
-          <div class="Course">Course: Snack, Sweet</div>
-          <div class="Servings">Servings: 28 cookies</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: Dec. 20, 2013</div>
-          <div class="DateUpdated">Date Updated: Sep. 16, 2022</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="rightBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Serious Eats</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Western</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 45mins prep. 35mins to cook</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+          <div class="Course"><b>Course:</b> Snack, Sweet</div><br>
+          <div class="Servings"><b>Servings:</b> 28 cookies</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Dec. 20, 2013</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> Sep. 16, 2022</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
       </div>
 
@@ -277,26 +279,26 @@
     <!-- Recipe 6 -->
     <div class="RecipeBox KLA Fusion Vegetarian Low">
       <div class="headingBox">
-        <h2><a href="https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe" target="_blank" rel="noopener noreferrer"></a>Grilled Cheese With Kimchi Recip</h2>
+        <h2><a href="https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe" target="_blank" rel="noopener noreferrer">Grilled Cheese With Kimchi Recip</a></h2>
         <p>J. Kenji López-Alt</p>
       </div>
       
       <div class="bodyBox">
 
-        <div class="leftBox">
-          <div class="Publisher">Publisher: Serious Eats</div>
-          <div class="Cuisine">Cuisine: Fusion</div>
-          <div class="TimeToCook">Time to Cook: 12 mins</div>
-          <div class="SkillLevel">Skill Level: Low</div>
-          <div class="Course">Course: Snack, Savoury</div>
-          <div class="Servings">Servings: 1 sandwich</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: Apr. 28, 2013</div>
-          <div class="DateUpdated">Date Updated: Sep. 21, 2022</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Serious Eats</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Fusion</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 12 mins</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+          <div class="Course"><b>Course:</b> Snack, Savoury</div><br>
+          <div class="Servings"><b>Servings:</b> 1 sandwich</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Apr. 28, 2013</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> Sep. 21, 2022</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A</div><br>
         </div>
 
-        <div class="rightBox">
+        <div class="rightBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Grilled_Cheese.jpg" alt="grilled cheese sandwich with pickles" />
@@ -322,12 +324,12 @@
     <div class="RecipeBox CLM American MeatBased Medium">
 
       <div class="headingBox">
-        <h2><a href="https://www.patreon.com/posts/recipe-hands-off-60369279" target="_blank" rel="noopener noreferrer"></a>Hands-Off Pork and Beans</h2>
+        <h2><a href="https://www.patreon.com/posts/recipe-hands-off-60369279" target="_blank" rel="noopener noreferrer">Hands-Off Pork and Beans</a></h2>
         <p>Carla Lalli Music</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
+        <div class="leftBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Pork_Beans.jpg" alt="pot of pork and beans" />
@@ -344,17 +346,17 @@
           </div>
         </div>
 
-        <div class="rightBox">
-          <div class="Publisher">Publisher: Carla Lalli Music</div>
-          <div class="Cuisine">Cuisine: American</div>
-          <div class="TimeToCook">Time to Cook: overnight preperation. 4 hours to cook</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Main</div>
-          <div class="Servings">Servings: 6 generous servings</div>
-          <div class="Dietary">Dietary: Meat based</div>
-          <div class="DatePublished">Date Published: Dec 28, 2021</div>
-          <div class="DateUpdated">Date Updated: N/A</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="rightBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Carla Lalli Music</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> American</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> overnight preperation. 4 hours to cook</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Main</div><br>
+          <div class="Servings"><b>Servings:</b> 6 generous servings</div><br>
+          <div class="Dietary"><b>Dietary:</b> Meat based</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Dec 28, 2021</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> N/A</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A</div><br>
         </div>
       </div>
 
@@ -364,26 +366,26 @@
     <div class="RecipeBox M Korean Vegetarian Low">
 
       <div class="headingBox">
-        <h2><a href="https://www.maangchi.com/recipe/kimchijeon" target="_blank" rel="noopener noreferrer"></a>Kimchi Pancake</h2>
+        <h2><a href="https://www.maangchi.com/recipe/kimchijeon" target="_blank" rel="noopener noreferrer">Kimchi Pancake</a></h2>
         <p>Maangchi</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
-          <div class="Publisher">Publisher: Maangchi</div>
-          <div class="Cuisine">Cuisine: Korean</div>
-          <div class="TimeToCook">Time to Cook: 15mins</div>
-          <div class="SkillLevel">Skill Level: Low</div>
-          <div class="Course">Course: Snack, Savoury</div>
-          <div class="Servings">Servings: 8 slices</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: February 27th, 2020</div>
-          <div class="DateUpdated">Date Updated: August 1, 2021</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Maangchi</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Korean</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 15mins</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+          <div class="Course"><b>Course:</b> Snack, Savoury</div><br>
+          <div class="Servings"><b>Servings:</b> 8 slices</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> February 27th, 2020</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> August 1, 2021</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A</div><br>
         </div>
 
-        <div class="rightBox">
-          <div class="RecipeImageContainer">
+        <div class="rightBox" id="imageBox">
+          <div class="RecipeImageContainer" >
 
             <img class="RecipeImg" src="./images/Kimchi_Pancake.jpg" alt="kimchi pancake with bowl of dipping sauce" />
     
@@ -405,12 +407,12 @@
     <div class="RecipeBox KLA NorthAfrican Vegetarian Medium">
 
       <div class="headingBox">
-        <h2><a href="https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe" target="_blank" rel="noopener noreferrer"></a>Shakshuka (North African–Style Poached Eggs in Spicy Tomato Sauce)</h2>
+        <h2><a href="https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe" target="_blank" rel="noopener noreferrer">Shakshuka (North African–Style Poached Eggs in Spicy Tomato Sauce)</a></h2>
         <p>J. Kenji López-Alt</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
+        <div class="leftBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Shakshuka.jpg" alt="pan filled with shakshuka" />
@@ -426,17 +428,17 @@
           </div>
         </div>
 
-        <div class="rightBox">
-          <div class="Publisher">Publisher: Serious Eats</div>
-          <div class="Cuisine">Cuisine: North African</div>
-          <div class="TimeToCook">Time to Cook: 35 mins</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Main</div>
-          <div class="Servings">Servings: 4 to 6</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: Sep. 28, 2016</div>
-          <div class="DateUpdated">Date Updated: Aug. 10, 2022</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="rightBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Serious Eats</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> North African</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 35 mins</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Main</div><br>
+          <div class="Servings"><b>Servings:</b> 4 to 6</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Sep. 28, 2016</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> Aug. 10, 2022</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A</div><br>
         </div>
       </div>
 
@@ -445,25 +447,25 @@
     <!-- Recipe 10 -->
     <div class="RecipeBox CLM Italian Pescatarian Low">
       <div class="headingBox">
-        <h2><a href="https://www.patreon.com/posts/pasta-with-sauce-45042575" target="_blank" rel="noopener noreferrer"></a>Spaghetti with Melted Cauliflower Sauce</h2>
+        <h2><a href="https://www.patreon.com/posts/pasta-with-sauce-45042575" target="_blank" rel="noopener noreferrer">Spaghetti with Melted Cauliflower Sauce</a></h2>
         <p>Carla Lalli Music</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
-          <div class="Publisher">Publisher: Carla Lalli Music</div>
-          <div class="Cuisine">Cuisine: Italian</div>
-          <div class="TimeToCook">Time to Cook: 1 hour and 10 minutes</div>  
-          <div class="SkillLevel">Skill Level: Low</div>
-          <div class="Course">Course: Main</div>
-          <div class="Servings">Servings: 4 servings</div>
-          <div class="Dietary">Dietary: Pescatarian</div>
-          <div class="DatePublished">Date Published: Dec 16, 2020</div>
-          <div class="DateUpdated">Date Updated: N/A</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Carla Lalli Music</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Italian</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b>1 hour and 10 minutes</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+          <div class="Course"><b>Course:</b> Main</div><br>
+          <div class="Servings"><b>Servings:</b> 4 servings</div><br>
+          <div class="Dietary"><b>Dietary:</b> Pescatarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Dec 16, 2020</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> N/A</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
 
-        <div class="rightBox">
+        <div class="rightBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Cauliflower_Spaghetti.jpg" alt="bowl of spaghettie with cauliflower sauce" />
@@ -486,12 +488,12 @@
     <div class="RecipeBox M Korean MeatBased Medium">
 
       <div class="headingBox">
-        <h2><a href="https://www.maangchi.com/recipe/yangnyeom-tongdak" target="_blank" rel="noopener noreferrer"></a>Sweet, Sour, & Spicy Korean Fried Chicken</h2>
+        <h2><a href="https://www.maangchi.com/recipe/yangnyeom-tongdak" target="_blank" rel="noopener noreferrer">Sweet, Sour, & Spicy Korean Fried Chicken</a></h2>
         <p>Maangchi</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
+        <div class="leftBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Korean_Fried_Chicken.jpg" alt="plate of fried chicken with pickles and kimchi" />
@@ -509,17 +511,17 @@
           </div>
         </div>
 
-        <div class="rightBox">
-          <div class="Publisher">Publisher: Maangchi</div>
-          <div class="Cuisine">Cuisine: Korean</div>
-          <div class="TimeToCook">Time to Cook: 45-50 minutes</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Main</div>
-          <div class="Servings">Servings: 3 to 4</div>
-          <div class="Dietary">Dietary: Meat based</div>
-          <div class="DatePublished">Date Published: January 27th, 2011</div>
-          <div class="DateUpdated">Date Updated: August 3, 2021</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="rightBox" id="infoBox">
+          <div class="Publisher"><b>>Publisher:</b> Maangchi</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Korean</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 45-50 minutes</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Main</div><br>
+          <div class="Servings"><b>Servings:</b> 3 to 4</div><br>
+          <div class="Dietary"><b>Dietary:</b> Meat based</div><br>
+          <div class="DatePublished"><b>Date Published:</b> January 27th, 2011</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> August 3, 2021</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
       </div>
 
@@ -529,25 +531,25 @@
     <div class="RecipeBox KLA Russian MeatBased Medium">
 
       <div class="headingBox">
-        <h2><a href="https://www.seriouseats.com/ultimate-beef-stroganof-recipe" target="_blank" rel="noopener noreferrer"></a>The Ultimate Beef Stroganoff Recipe</h2>
+        <h2><a href="https://www.seriouseats.com/ultimate-beef-stroganof-recipe" target="_blank" rel="noopener noreferrer">The Ultimate Beef Stroganoff Recipe</a></h2>
         <p>J. Kenji López-Alt</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
-          <div class="Publisher">Publisher: Serious Eats</div>
-          <div class="Cuisine">Cuisine: Russian</div>
-          <div class="TimeToCook">Time to Cook: 55 mins</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Main</div>
-          <div class="Servings">Servings: 4 servings</div>
-          <div class="Dietary">Dietary: Meat based</div>
-          <div class="DatePublished">Date Published: Jan. 9, 2015</div>
-          <div class="DateUpdated">Date Updated: Aug. 27, 2020</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Serious Eats</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Russian</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 55 mins</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Main</div><br>
+          <div class="Servings"><b>Servings:</b> 4 servings</div><br>
+          <div class="Dietary"><b>Dietary:</b> Meat based</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Jan. 9, 2015</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> Aug. 27, 2020</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
 
-        <div class="rightBox">
+        <div class="rightBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Stroganoff.jpg" alt="bowl of beef stroganoff pasta" />
@@ -572,12 +574,12 @@
     <div class="RecipeBox CLM French Vegetarian Medium">
 
       <div class="headingBox">
-        <h2><a href="https://www.patreon.com/posts/recipe-vanilla-60100711" target="_blank" rel="noopener noreferrer"></a>Vanilla-Brown Butter Pear Tart</h2>
+        <h2><a href="https://www.patreon.com/posts/recipe-vanilla-60100711" target="_blank" rel="noopener noreferrer">Vanilla-Brown Butter Pear Tart</a></h2>
         <p>Carla Lalli Music</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
+        <div class="leftBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Pear_Tart.jpg" alt="pear tart on a table" />
@@ -595,17 +597,17 @@
           </div>
         </div>
 
-        <div class="rightBox">
-          <div class="Publisher">Publisher: Carla Lalli Music</div>
-          <div class="Cuisine">Cuisine: French</div>
-          <div class="TimeToCook">Time to Cook: ~ 3 hours</div>
-          <div class="SkillLevel">Skill Level: Medium</div>
-          <div class="Course">Course: Dessert</div>
-          <div class="Servings">Servings: 8 servings</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: Dec 20, 2021</div>
-          <div class="DateUpdated">Date Updated: N/A</div>
-          <div class="SpecialEquipment">Special Equipment: Bench scraper, tart pan</div>
+        <div class="rightBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> Carla Lalli Music</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> French</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> ~ 3 hours</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Medium</div><br>
+          <div class="Course"><b>Course:</b> Dessert</div><br>
+          <div class="Servings"><b>Servings:</b> 8 servings</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> Dec 20, 2021</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> N/A</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> Bench scraper, tart pan</div><br>
         </div>
       </div>
 
@@ -615,25 +617,25 @@
     <div class="RecipeBox HM Fusion Vegetarian Low">
 
       <div class="headingBox">
-        <h2><a href="https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392" target="_blank" rel="noopener noreferrer"></a>Vegetarian Carbonara with Mushrooms, Miso and Parmesan</h2>
+        <h2><a href="https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392" target="_blank" rel="noopener noreferrer">Vegetarian Carbonara with Mushrooms, Miso and Parmesan</a></h2>
         <p>Hetty Mckinnon</p>
       </div>
 
       <div class="bodyBox">
-        <div class="leftBox">
-          <div class="Publisher">Publisher: ABC Everday</div>
-          <div class="Cuisine">Cuisine: Fusion</div>
-          <div class="TimeToCook">Time to Cook: 0:15 prep time - 0:15 cook time</div>
-          <div class="SkillLevel">Skill Level: Low</div>
-          <div class="Course">Course: Main</div>
-          <div class="Servings">Servings: 4</div>
-          <div class="Dietary">Dietary: Vegetarian</div>
-          <div class="DatePublished">Date Published: 9 Jul 2020</div>
-          <div class="DateUpdated">Date Updated: 26 Feb 2021</div>
-          <div class="SpecialEquipment">Special Equipment: </div>
+        <div class="leftBox" id="infoBox">
+          <div class="Publisher"><b>Publisher:</b> ABC Everday</div><br>
+          <div class="Cuisine"><b>Cuisine:</b> Fusion</div><br>
+          <div class="TimeToCook"><b>Time to Cook:</b> 0:15 prep time - 0:15 cook time</div><br>
+          <div class="SkillLevel"><b>Skill Level:</b> Low</div><br>
+          <div class="Course"><b>Course:</b> Main</div><br>
+          <div class="Servings"><b>Servings:</b> 4</div><br>
+          <div class="Dietary"><b>Dietary:</b> Vegetarian</div><br>
+          <div class="DatePublished"><b>Date Published:</b> 9 Jul 2020</div><br>
+          <div class="DateUpdated"><b>Date Updated:</b> 26 Feb 2021</div><br>
+          <div class="SpecialEquipment"><b>Special Equipment:</b> N/A </div><br>
         </div>
 
-        <div class="rightBox">
+        <div class="rightBox" id="imageBox">
           <div class="RecipeImageContainer">
 
             <img class="RecipeImg" src="./images/Mushroom_Carbonara.jpg" alt="pan filled with mushroom carbonara pasta" />
@@ -651,7 +653,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
 
     </section>
