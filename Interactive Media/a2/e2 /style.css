@@ -136,7 +136,7 @@ summary::-webkit-details-marker {display: none; }
 }
 
 .SelectedFilter{
-  
+  background-color: var(--col-04);
 }
 
 .RecipeLink{
