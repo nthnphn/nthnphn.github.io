@@ -1,0 +1,234 @@
+/*
+  This one CSS file is imported into both index.html AND hosono.html so you need to be careful that it 
+  works for both.
+*/
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#FAEDCD;
+  --col-03:#FEFAE0;
+  --col-04:#D4A373;
+  --col-05:#CCD5AE;
+  font-size: 16px;
+  /* scroll behaviour makes the <a> links to ids scroll to position over time rather than immediately */
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 1rem;
+  background-image: linear-gradient(to left, var(--col-01) 50%, var(--col-02) 50%);
+  background-size: 200%;
+  color: var(--col-01);
+
+  transition: all 3s;
+}
+
+@keyframes background_switch_black {
+  to {
+    position: left;  
+  }
+}
+
+@keyframes background_switch_white {
+  to {
+    position: right;
+  }
+}
+
+a {
+  all: unset;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav li{
+  font-size: 1rem;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+ol {
+}
+
+li{
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+li:hover {
+  font-weight: 900;
+}
+
+li:hover #arrow {
+  font-weight: 900;
+  color: var(--col-01);
+}
+
+#arrow {
+  color: var(--col-02);
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+#mode-button{
+  float: right;
+  /* note the use of position: sticky to keep the button on the page even with scrolling */
+  position: sticky;
+  top: 1rem;
+  background: linear-gradient(to left, transparent 50%, var(--col-01) 50%) right;
+  background-size: 200%;
+  border-style: solid;
+  border-color: transparent;
+  padding: 5px;
+  border-width: 2px;
+  border-radius: 10%;
+
+  transition: 0.3s ease-out;
+}
+
+#mode-button:hover {
+  background-position: left;
+  border-color: var(--col-01);
+}
+
+#mode-button:active {
+  background-position: left;
+}
+
+/* code for loading page */
+
+#load-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* changing button to look like a link */
+#load-link{
+  line-height: 1rem;
+  background: transparent;
+  background-size: 200%;
+  border-style: solid 2px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+#load-link:active {
+  background-color: var(--col-04);
+}
+
+/* throbber while page is fake loading */
+#load-throbber{
+  /* the width, height and background-color give it a shape on the page without any content inside - 
+  these value are arbitrary, please change to create your own design  */
+  width: 300px;
+  height: 20px;
+
+  background-image: repeating-linear-gradient(to right, transparent, transparent 30px, var(--col-04) 30px, var(--col-04) 45px);
+  background-size: 200% 100%;
+  animation: loading 2.5s linear infinite;
+  /* we also initially set display to none so it only shows once the link is clicked */
+  display: none;
+} 
+
+@keyframes loading {
+  to {
+    background-position: right;
+  }
+}
+
+/* Media Queries */
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+
+}
+
+@media (prefers-reduced-motion) {
+  :root{
+    scroll-behavior: auto;
+  }
+}

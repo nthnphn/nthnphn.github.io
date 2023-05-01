@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 
+<!-- 
+
+  PROVIDE MEANINGFUL FEEDBACK TO THE FOLLOWING ELEMENTS:
+  1) <button> with the id of load-link on the loading page (index.html) 
+    - For the load-link button I gave it an active class when clicked on. This is because the text states
+      "Click to load page" so this means users will expect what it states. That when the button is clicked
+      it will load the next page. Hence the to further complement this idea I made it so that the background 
+      of the button changes into a darker colour when clicked on to showcase that the use has completed the 
+      action. I made the button background change into a darker variant of the page background in order to 
+      stand out.
+
+  2) <div> with the id of load-throbber on the loading page (index.html) 
+    - For the load throbber I changed it to a repeating linear gradient. The linear gradient is then split 
+      two halves, one half is transparent and the other half is the darker variant of the page background 
+      colour. By implementing an animation that moves the background to the right, and making it repeat 
+      infinitely, the load-throbber acts as if it is constantly working. This helps the users think that 
+      the website is actually "loading" or "working" to change pages.
+
+  3) <li> inside of the <ol> inside of the <nav> on the information page (hosono.html) 
+    - I implemented the hover function for the navigation list. At first I made it so that when the user
+      hovers over the navigation menu, the different options would bold to identify which link you will be 
+      clicking on. However I didn't think this was enough as all the links throughout the page do the same 
+      thing. So I further added an arrow to appear when the navigation link is being hovered on to further 
+      showcase which link the user will be clicking on.
+
+  4) <button> with the id of mode-button on the information page (hosono.html)
+    - For the mode-button I added a hover function that causes the opposite mode colour to cover the button  
+      from the left. This helps give the idea that page will change modes. As the button is replaced with the
+      opposite colour the page will be as well. The button in light-mode will change to black when hovered over
+      while the button in dark-mode will change to a cream coloured when hovered. This helps users get the 
+      what the button is used for without having to need to read or understand "light mode" or "dark mode."
+
+  5) switchModes() function - hint you can add a transition CSS property to the <body> and it will be inherited 
+     by all the elements inside, so when custom CSS variables are changed it will apply transition
+    - I gave the switchMode function a transition of 3 seconds cause I believe that is enough time for users to
+      adjust to the switch of colours when the page is changed. It is not too quick or too long.
+-->
+
 <html lang="en">
 
-    <head>
+  <head>
 
-        <meta charset="utf-8" name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        <script src="script.js"></script>
- 
-    </head>
+    <title>Loading Page</title>
 
-    <body>
+    <script src="./fakeLoad.js" defer></script>
 
-        <h1>Hello my name is Nathan</h1>
+  </head>
 
-    </body>
+  <body id="load-body">
+
+      <h1>Haruomi Hosono</h1>
+      <!--
+        Typically I'd use an <a> here but as we're faking a load time I'm using a <button> instead.  If it was an 
+        <a> I would leave off the target attribute so that it would redirect the current tab.
+      -->
+      <!--
+        The function loadPageAfterDelay() is declared in the file fakeLoad.js - it takes a number value that sets the 
+        amount of time it takes in ms and a url to redirect to.
+      -->
+      <button id="load-link" onclick="loadPageAfterDelay(10000, './hosono.html')">Click to Load Page</button>
+      <!--
+        This is a div we're using for the throbber - if we wanted to do a % based loading bar there is an element 
+        called <progress> but as this one is just indicating a wait rather than providing direct feedback on progress I've 
+        opted for using a <div>.
+      -->
+      <div id="load-throbber">
+      </div>
+
+
+  </body>
 
 </html>
