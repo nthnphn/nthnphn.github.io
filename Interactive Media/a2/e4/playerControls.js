@@ -216,6 +216,35 @@ window.addEventListener("keyup", (e) => {
   }
 })
 
+/* -------------------------------- CODE COMMENT -------------------------------- 
+The new feature I decided to add was a fast forward and rewind feature.
+I believe this feature needed to be added in order for users to skip or 
+return to the specific point of of the video where they are interested in.
+This can also be done through clicking the progress bar however with the 
+fast forward and rewind feature the users will have an easier time navigating 
+in smaller increments. This feature may not be used as often for the current
+video playing (music video) however it will be more useful for other types of
+videos.
+
+I made it so the buttons can be activated with the use of the arrow keys to 
+increase usability. When the right arrow key is pressed down, the video will 
+fast forward 1 second and the button's background colour will also change to
+indicate the action being performed. Same with the rewind button, as the left 
+arrow key is pressed down the video will rewind back 1 second and and the 
+background colour for the rewind button will be changed indicating that the
+action has been completed. However to have the background colour change only 
+when the specific keys are pressed I needed to incorporate a keyup action. 
+When keyup element allows the buttons background images to change back to 
+its original colour when the keys are released.
+
+Due to the events changing the background images for the buttons, this lead to 
+them not being changed when they were clicked on with a mouse. To solve this, 
+3 functions were added: "fastForward," "rewind," and "hoverColour." "fastForward"
+changes the background image when the fast forward button is clicked. The same 
+goes with "rewind" for the rewind button. And "hoverColour" changes the background
+image for both buttons when the mouse is hovered over them.
+
+-------------------------------- CODE COMMENT -------------------------------- */
 
 
 /* HELPER FUNCTIONS */
