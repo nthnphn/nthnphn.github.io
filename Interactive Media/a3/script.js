@@ -57,8 +57,9 @@ function animateCircles(elementToAnimate, endPos) {
         // differentiates circles with their different id's
         console.log(e.target.dataset.audioid);
         let audioElement = document.getElementById(e.target.dataset.audioid);
+
+        // plays audio
         audioElement.play();
-        console.log(audioElement);
     }
 }
 
